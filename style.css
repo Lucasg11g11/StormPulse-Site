@@ -1,0 +1,277 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f5f9;  /* Fundo claro */
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1e3a8a; /* Azul escuro */
+    padding: 20px 40px;
+    text-align: center;
+    border-bottom: 1px solid #4c6ef5; /* Azul claro */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    margin: 0 20px;
+    color: #e0e7ff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    border-color: #4c6ef5;
+    color: #4c6ef5;
+}
+
+/* Seção Hero */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #e0e7ff;  /* Azul claro */
+    flex: 1;
+    display: flex; /* Adicione esta linha */
+    flex-direction: column; /* Alinha os itens na vertical */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #1e3a8a;
+}
+
+/* Lista de tutorial */
+.tutorial-list {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.tutorial-list li {
+    font-size: 1.2rem;
+    color: #333;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    position: relative;
+}
+
+.tutorial-list li:hover {
+    transform: translateY(-5px);
+}
+
+.tutorial-list li::before {
+    content: "✅";
+    color: #4c6ef5;
+    font-size: 1.5rem;
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tutorial-list li a {
+    color: #4c6ef5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.tutorial-list li a:hover {
+    color: #3b5b9a;
+}
+
+/* Botão */
+.botao-download {
+    background: linear-gradient(145deg, #4c6ef5, #3b5b9a); /* Gradiente suave */
+    color: #fff;
+    padding: 16px 32px; /* Aumentar o tamanho do botão para mais destaque */
+    font-size: 1.1rem; /* Tamanho de fonte um pouco maior */
+    text-decoration: none;
+    border-radius: 12px; /* Bordas mais arredondadas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra suave */
+    transition: all 0.3s ease; /* Transição suave */
+    display: inline-block; /* Garante que o botão se comporte como um bloco de conteúdo */
+    margin-top: 20px;
+}
+
+.botao-download:hover {
+    background: linear-gradient(145deg, #3b5b9a, #4c6ef5); /* Inverter o gradiente no hover */
+    transform: translateY(-4px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.05); /* Sombra mais forte */
+}
+
+.botao-download:active {
+    transform: translateY(-2px); /* Leve efeito de clique */
+}
+
+
+
+.botao-download:hover {
+    background-color: #3b5b9a;
+    transform: translateY(-2px);
+}
+
+/* Seção de Recursos */
+.recursos {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recursos h3 {
+    font-size: 2rem;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+}
+
+.recursos-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.recurso {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recurso h4 {
+    font-size: 1.5rem;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.recurso p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Seção de Testemunhos */
+.testemunhos {
+    background-color: #e0e7ff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testemunhos h3 {
+    font-size: 2rem;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+}
+
+.testemunhos-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.testemunho {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 280px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testemunho p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.testemunho span {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1e3a8a;
+    color: #e0e7ff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    border-top: 1px solid #4c6ef5;
+    margin-top: auto;
+}
+
+/* Seção de Histórico de Versões */
+.versao-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #1e3a8a;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+td {
+    font-size: 1rem;
+    color: #333;
+}
+
+td a {
+    color: #4c6ef5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+td a:hover {
+    color: #3b5b9a;
+}
