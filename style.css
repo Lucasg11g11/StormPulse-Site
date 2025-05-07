@@ -7,10 +7,12 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f1f5f9;  /* Fundo claro */
+    background-color: #e0e7ff;  /* Azul claro */
     color: #333;
     line-height: 1.6;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
 }
@@ -19,6 +21,7 @@ body {
 header {
     background-color: #1e3a8a; /* Azul escuro */
     padding: 20px 40px;
+    position: relative;
     text-align: center;
     border-bottom: 1px solid #4c6ef5; /* Azul claro */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -29,6 +32,7 @@ header h1 {
     color: #ffffff;
     margin-bottom: 10px;
 }
+
 
 header nav {
     margin-top: 10px;
@@ -275,3 +279,144 @@ td a {
 td a:hover {
     color: #3b5b9a;
 }
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav a {
+        margin: 0 10px;
+        font-size: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+
+    .tutorial-list li {
+        font-size: 1rem;
+        padding: 12px 16px;
+    }
+
+    .tutorial-list li::before {
+        left: -30px;
+        font-size: 1.2rem;
+    }
+
+    .botao-download {
+        padding: 14px 24px;
+        font-size: 1rem;
+    }
+
+    .recursos-container, .testemunhos-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .recurso, .testemunho {
+        width: 100%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .versao-container {
+        padding: 20px;
+    }
+}
+
+.Mudança {
+    background: linear-gradient(135deg, #f9fbff, #ffffff); /* Fundo suave */
+    padding: 36px 32px; /* Padding para o conteúdo interno */
+    border-radius: 12px; /* Cantos arredondados */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Sombra sutil */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.05); /* Borda suave */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Efeitos de transição suaves */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333; /* Cor do texto */
+    width: 100%; /* Para garantir que o conteúdo ocupe toda a largura disponível */
+    max-width: 800px; /* Limita a largura máxima */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+  }
+  
+  .Mudança h2 {
+    font-size: 1.6rem; /* Tamanho do título */
+    font-weight: bold; /* Negrito no título */
+    margin-bottom: 16px; /* Espaçamento entre título e lista */
+    color: #2c3e50; /* Cor mais escura para o título */
+  }
+  
+  .novidades-lista {
+    list-style-type: disc; /* Marcadores de lista */
+    padding-left: 20px; /* Alinhamento dos itens da lista */
+    margin: 0; /* Remove margem adicional */
+  }
+  
+  .novidades-lista li {
+    margin-bottom: 8px; /* Espaço entre os itens da lista */
+    font-size: 1rem; /* Tamanho da fonte dos itens da lista */
+    color: #555; /* Cor dos itens da lista */
+  }
+  
+  .Mudança:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15); /* Aumento da sombra */
+    transform: translateY(-4px); /* Leve deslocamento para cima */
+    cursor: pointer; /* Cursor de pointer ao passar o mouse */
+  }
+  
+  
+/* Zera margens e paddings */
+body, header, h1 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header com layout padrão, mas centralizado */
+  header {
+    display: block;        /* Usando o bloco normal, sem flexbox */
+    text-align: center;    /* Centraliza o conteúdo dentro do header */
+    padding: 20px 0;       /* Ajuste o padding para o espaçamento adequado */
+    width: 100%;
+  }
+  
+  /* Contêiner do título com flex */
+  h1.flex-title {
+    display: inline-flex;  /* Faz com que o título ocupe apenas o espaço necessário */
+    align-items: center;
+    gap: 16px; /* Espaço maior entre imagem e texto */
+    font-weight: 700;
+    font-size: 3rem; /* Ajustado para o tamanho desejado */
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+  
+  /* Imagem com classe Logo */
+  img.Logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+  
+  
+  
+  
+  
+  
+  
