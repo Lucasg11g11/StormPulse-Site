@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Requisitos - StormPulse</title>
+    <title>Requisitos - ⛈️🌪️⚡️ 𝓢𝓣𝓞𝓡𝓜𝓟𝓤𝓛𝓢𝓔 ⚡️🌪️⛈️</title>
     <link rel="stylesheet" href="stylerequisitos.css">
 </head>
 <body>
     <header>
-        <h1>🌩️ StormPulse Painel</h1>
+        <h1 class="flex-title">
+            <img src="stormpulse.ico" alt="Logo do Site" class="Logo"/>
+            ⛈️🌪️⚡️ 𝓢𝓣𝓞𝓡𝓜𝓟𝓤𝓛𝓢𝓔 ⚡️🌪️⛈️
+        </h1>
         <nav>
             <a href="index.html">Início</a>
             <a href="versoes.html">Versões</a>
@@ -20,25 +23,39 @@
     <main class="hero">
         <h2>⚙️ Requisitos do Painel</h2>
 
-        <section class="requisitos">
+        <section class="recursos">
             <h3>🪟 Para Windows</h3>
-            <ul>
-                <li>✅ Windows 10 ou superior</li>
-                <li>✅ .NET Framework 4.8 instalado</li>
-                <li>✅ Permissão de Administrador</li>
-                <li>✅ Antivírus e firewall configurado para permitir o StormPulse</li>
-                <li>✅ NMAP instalado</li>
+            <ul class="tutorial-list">
+                <li>Windows 10 ou superior</li>
+                <li>.NET Framework 4.8 instalado</li>
+                <li>Permissão de Administrador</li>
+                <li>Antivírus e firewall configurado para permitir o StormPulse</li>
+                <li>NMAP instalado</li>
             </ul>
         </section>
 
-        <section class="requisitos">
+        <section class="recursos" style="margin-top: 50px;">
             <h3>🐧 Para Linux</h3>
-            <ul>
-                <li>✅ Permissão de root (sudo)</li>
-                <li>✅ Net-Tools instalado ➡️ "1-sudo apt update" "2-sudo apt install net-tools"</li>
-                <li>✅ NMAP instalado</li>
+            <ul class="tutorial-list">
+                <li>Permissão de root (sudo)</li>
+                <li>Net-Tools instalado ➡️ "1-sudo apt update" "2-sudo apt install net-tools"</li>
+                <li>NMAP instalado</li>
+                <li>Rodar o exe com wine</li>
             </ul>
         </section>
+
+        <section class="recursos" style="margin-top: 50px;">
+            <h3>🍎 Para MacOS</h3>
+            <ul class="tutorial-list">
+                <li>MacOS 11 Big Sur ou superior</li>
+                <li>Permissão de Administrador (sudo)</li>
+                <li>Xcode Command Line Tools instalado ➡️ "xcode-select --install"</li>
+                <li>NMAP instalado ➡️ "brew install nmap"</li>
+                <li>Permitir o StormPulse nas Preferências de Segurança</li>
+                <li>Rodar o exe com wine</li>
+            </ul>
+        </section>
+
     </main>
 
     <footer>
