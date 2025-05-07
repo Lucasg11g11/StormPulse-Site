@@ -107,3 +107,132 @@ footer {
     border-top: 1px solid #4c6ef5;
     margin-top: auto;
 }
+
+/* Estilos para as seções de recursos */
+.recursos {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recursos:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.recursos h3 {
+    font-size: 1.8rem;
+    color: #1e3a8a; /* Azul escuro */
+    margin-bottom: 15px;
+}
+
+.tutorial-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.tutorial-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: #555;
+}
+
+.tutorial-list li::before {
+    content: "✅"; /* Ícone de verificação */
+    margin-right: 10px;
+    color: #4c6ef5; /* Azul claro */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .recursos {
+        padding: 20px 15px;
+    }
+
+    .recursos h3 {
+        font-size: 1.5rem;
+    }
+
+    .tutorial-list li {
+        font-size: 1rem;
+    }
+
+    header {
+        padding: 15px 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav a {
+        margin: 0 10px;
+        font-size: 1rem;
+    }
+
+    .hero {
+        padding: 40px 10px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .requisitos {
+        padding: 20px 15px;
+    }
+
+    .requisitos h3 {
+        font-size: 1.5rem;
+    }
+
+    .requisitos ul li {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 15px 0;
+    }
+}
+
+
+
+/* Zera margens e paddings */
+body, header, h1 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header com layout padrão, mas centralizado */
+  header {
+    display: block;        /* Usando o bloco normal, sem flexbox */
+    text-align: center;    /* Centraliza o conteúdo dentro do header */
+    padding: 20px 0;       /* Ajuste o padding para o espaçamento adequado */
+    width: 100%;
+  }
+  
+  /* Contêiner do título com flex */
+  h1.flex-title {
+    display: inline-flex;  /* Faz com que o título ocupe apenas o espaço necessário */
+    align-items: center;
+    gap: 16px; /* Espaço maior entre imagem e texto */
+    font-weight: 700;
+    font-size: 3rem; /* Ajustado para o tamanho desejado */
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+  
+  /* Imagem com classe Logo */
+  img.Logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
